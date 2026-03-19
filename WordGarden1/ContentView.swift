@@ -5,13 +5,14 @@
 //  Created by GONZALEZ, ESSAI on 1/12/26.
 //
 import SwiftUI
+import AVFAudio
 
 struct ContentView: View {
     private static let maximumGuesses = 8
     
     @State private var wordsGuessed = 0
     @State private var wordsMissed = 0
-    @State private var gameStatusMessage = " How Many Guesses to Uncover the Hidden Word?"
+    @State private var gameStatusMessage = "How Many Guesses to Uncover the Hidden Word?"
     @State private var currentWordIndex = 0
     @State private var wordToGuess = ""
     @State private var revealedWord = ""
@@ -166,6 +167,7 @@ struct ContentView: View {
 
 
 }
+
     
     
     #Preview {
